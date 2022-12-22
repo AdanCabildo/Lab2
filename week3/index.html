@@ -2,30 +2,32 @@
 <html>
 <head>
 <style>
-div.ex1 {
-  width: 500px;
-  margin: auto;
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
   border: 3px solid #73AD21;
-}
+} 
 
-div.ex2 {
-  max-width: 500px;
-  margin: auto;
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
   border: 3px solid #73AD21;
 }
 </style>
 </head>
 <body>
 
-<h2>CSS Max-width</h2>
+<h2>position: absolute;</h2>
 
-<div class="ex1">This div element has width: 500px;</div>
-<br>
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
 
-<div class="ex2">This div element has max-width: 500px;</div>
-
-<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
-the two divs!</p>
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
 
 </body>
 </html>
