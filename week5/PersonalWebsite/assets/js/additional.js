@@ -5,6 +5,8 @@ function displayTime() {
     var seconds = currentTime.getSeconds();
     var time = hours + ":" + minutes + ":" + seconds;
     document.getElementById("clock").innerHTML = time;
+
+    
 }
 setInterval(displayTime, 1000);
 
@@ -15,4 +17,8 @@ function Random() {
 
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-document.getElementById("currentDate").innerHTML = date;
+document.getElementById("currentDate").innerHTML = date; 
+
+function myFunction() {
+    alert("stop clicking me (-_-)");
+  }
