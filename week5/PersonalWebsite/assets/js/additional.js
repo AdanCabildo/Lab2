@@ -12,3 +12,7 @@ function Random() {
     var rnd = Math.floor(Math.random() * 101);
     document.getElementById("tb").value = rnd;
 }
+
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("currentDate").innerHTML = date;
