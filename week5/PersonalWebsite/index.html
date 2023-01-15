@@ -27,6 +27,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <div id="clock"></div>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
@@ -67,12 +68,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi! I'm<span class="text-brand"> Dan</h1>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi! I'm<span class="text-brand"> Dan </h1> 
+                            
                         <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I'm a Computer Science student with an interest in Artificial Intelligence, Programming and
                             Data Analytics. 
                         </p>
                         <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="#honors" class="btn btn-brand me-3">Explore My Achievements</a>
+                            
                             <a href="#" class="link-custom">Call: (+63) XXX-XXX-XXXX</a>
                         </div>
                     </div>
@@ -472,6 +474,9 @@
                             <div class="form-group col-12 d-grid">
                                 <button type="submit" class="btn btn-brand">Contact me</button>
                             </div>
+                            <div class="form-group col-12 d-grid">
+                                <input type="button" class="btn btn-brand" id="tb" name="tb" value="Lucky number" onclick="Random();" />
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -507,6 +512,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/additional.js"></script>
 </body>
 
 </html>
