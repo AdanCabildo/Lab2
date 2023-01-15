@@ -8,3 +8,7 @@ function displayTime() {
 }
 setInterval(displayTime, 1000);
 
+function Random() {
+    var rnd = Math.floor(Math.random() * 101);
+    document.getElementById("tb").value = rnd;
+}
