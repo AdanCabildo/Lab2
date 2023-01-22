@@ -41,3 +41,12 @@ for (let x in numbers) {
 
 document.getElementById("demo2").innerHTML = txt;
 
+/* For Of Loop */
+const brand = ["BMW", "Volvo", "Mini"];
+
+let print = "";
+for (let x of brand) {
+  print += x + "<br>";
+}
+
+document.getElementById("demo3").innerHTML = print;
