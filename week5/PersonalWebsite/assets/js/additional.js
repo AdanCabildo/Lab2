@@ -67,4 +67,4 @@ const fruits = new Map([
     ["oranges", 200]
   ]);
   
-  document.getElementById("demo").innerHTML = fruits.get("apples");
+  document.getElementById("demo5").innerHTML = fruits.get("apples");
