@@ -31,3 +31,13 @@ for (let i = 0; i < cars.length; i++) {
 }
 document.getElementById("demo1").innerHTML = text;
 
+/* For In Loop */
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+for (let x in numbers) {
+  txt += numbers[x] + "<br>"; 
+}
+
+document.getElementById("demo2").innerHTML = txt;
+
