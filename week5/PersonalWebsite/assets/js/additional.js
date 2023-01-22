@@ -59,3 +59,12 @@ while (i < 10) {
   i++;
 }
 document.getElementById("demo4").innerHTML = print1;
+
+/* Creating Maps */
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 300],
+    ["oranges", 200]
+  ]);
+  
+  document.getElementById("demo").innerHTML = fruits.get("apples");
