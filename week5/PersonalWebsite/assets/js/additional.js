@@ -50,3 +50,12 @@ for (let x of brand) {
 }
 
 document.getElementById("demo3").innerHTML = print;
+
+/* While Loop */
+let print1 = "";
+let i = 0;
+while (i < 10) {
+  print1 += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo4").innerHTML = print1;
