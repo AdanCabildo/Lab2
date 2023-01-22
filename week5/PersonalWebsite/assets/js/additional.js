@@ -21,25 +21,13 @@ document.getElementById("currentDate").innerHTML = date;
 
 function myFunction() {
     alert("stop clicking me (-_-)");
-  }
+}
 
-function goBack() {
-    window.history.back()
-  }
+/* For Loop */
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo1").innerHTML = text;
 
-function myMove() {
-    let id = null;
-    const elem = document.getElementById("animate");   
-    let pos = 0;
-    clearInterval(id);
-    id = setInterval(frame, 5);
-    function frame() {
-      if (pos == 350) {
-        clearInterval(id);
-      } else {
-        pos++; 
-        elem.style.top = pos + "px"; 
-        elem.style.left = pos + "px"; 
-      }
-    }
-  }
