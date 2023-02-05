@@ -14,16 +14,6 @@
 </head>
 
 <body>
-    <div id="content-wrapper">
-        <section id="home" class="full-height px-lg-5">
-            <a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week9/PersonalWebsite/resources.php"><h4 class="fw-light" data-aos="fade-up">Back</h4></a>
-            <p id="demo1"></p>
-            <p id="demo2"></p>
-            <p id="demo3"></p>
-            <p id="demo4"></p>
-            <p id="demo5"></p>
-        </section>
-    </div>
 <?php
 // define variables and set to empty values
 $name = $email = $gender = $comment = $website = "";
@@ -74,6 +64,7 @@ echo $comment;
 echo "<br>";
 echo $gender;
 ?>
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
