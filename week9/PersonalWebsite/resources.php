@@ -16,7 +16,7 @@
 <body>
     <div id="content-wrapper">
         <section id="home" class="full-height px-lg-5">
-            <a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week5/PersonalWebsite/index.html"><h4 class="fw-light" data-aos="fade-up">Back</h4></a>
+            <a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week9/PersonalWebsite/index.php"><h4 class="fw-light" data-aos="fade-up">Back</h4></a>
             <div class="container">
                 <div class="row">
                     <h1 class="display-4 fw-bold" data-aos="fade-up">Resources</h1>
@@ -63,7 +63,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week5/PersonalWebsite/jsPlayground.html"><h4 class="fw-light" data-aos="fade-up" data-aos-delay="1400">JavaScript Playground</h4></a>
+                    <a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week9/PersonalWebsite/jsPlayground.php"><h4 class="fw-light" data-aos="fade-up" data-aos-delay="1400">JavaScript Playground</h4></a>
                 </div>
             </div>
 
