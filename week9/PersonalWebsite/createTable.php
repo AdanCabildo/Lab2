@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dataforsale";
+$username = "webprogmi212";
+$password = "webprogmi212";
+$dbname = "alcabildo2_Guests";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

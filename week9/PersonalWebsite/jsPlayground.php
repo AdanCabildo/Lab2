@@ -66,9 +66,9 @@ echo "<br>";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "dataforsale";
+  $username = "webprogmi212";
+  $password = "webprogmi212";
+  $dbname = "alcabildo_guests";
   
   // Create connection
   $conn = new mysqli($servername, $username, $password, $dbname);
