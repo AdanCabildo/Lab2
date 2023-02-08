@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/logo5.png" />
 </head>
-
 <body>
 <?php
 // define variables and set to empty values
@@ -34,7 +33,7 @@ function test_input($data) {
 }
 ?>
 
-<h2>PHP Form Validation Example</h2>
+<h2>Data Mining (REAL)</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name">
   <br><br>
@@ -63,10 +62,33 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
-?>
+echo "<br>";
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/additional.js"></script>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "dataforsale";
+  
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  
+  $sql = "INSERT INTO table1 (name, email, website, comment, gender)
+  VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+  
+  if ($conn->query($sql) === TRUE) {
+    echo "Easy money!";
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+  
+  $conn->close();
+}
+?>
+<br>
+<h3><a href="http://localhost/Lab2/week9/PersonalWebsite/guests.php">Click here to view the guests!</a></h3>
 </body>
