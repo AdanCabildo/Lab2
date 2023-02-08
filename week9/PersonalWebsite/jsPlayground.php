@@ -90,5 +90,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <br>
-<h3><a href="http://localhost/Lab2/week9/PersonalWebsite/guests.php">Click here to view the guests!</a></h3>
+<h3><a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week9/PersonalWebsite/guests.php">Click here to view the guests!</a></h3>
 </body>

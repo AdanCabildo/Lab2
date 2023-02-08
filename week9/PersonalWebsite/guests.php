@@ -41,6 +41,6 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 <br>
-<h3><a href="http://localhost/Lab2/week9/PersonalWebsite/jsPlayground.php">Click here to get back!</a></h3>
+<h3><a href="https://apcwebprog.csf.ph/~alcabildo2/Lab2/week9/PersonalWebsite/jsPlayground.php">Click here to get back!</a></h3>
 </body>
 </html>
