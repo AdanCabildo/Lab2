@@ -17,7 +17,7 @@
 $servername = "localhost";
 $username = "webprogmi212";
 $password = "webprogmi212";
-$dbname = "alcabildo_guests";
+$dbname = "webprogmi212";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -26,7 +26,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM table1";
+$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM alcabildo_guests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
