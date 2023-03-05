@@ -14,9 +14,9 @@
 <body>
 <h1> Here are the guests! </h1>
 <?php
-$servername = "localhost";
+$servername = "192.168.150.213";
 $username = "webprogmi212";
-$password = "webprogmi212";
+$password = "b3ntRhino98";
 $dbname = "webprogmi212";
 
 // Create connection
@@ -26,7 +26,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM alcabildo_guests";
+$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM alcabildo_myguests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

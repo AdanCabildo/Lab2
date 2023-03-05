@@ -65,9 +65,9 @@ echo $gender;
 echo "<br>";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $servername = "localhost";
+  $servername = "192.168.150.213";
   $username = "webprogmi212";
-  $password = "webprogmi212";
+  $password = "b3ntRhino98";
   $dbname = "webprogmi212";
   
   // Create connection
@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     die("Connection failed: " . $conn->connect_error);
   }
   
-  $sql = "INSERT INTO alcabildo_guests (name, email, website, comment, gender)
+  $sql = "INSERT INTO alcabildo_myguests (name, email, website, comment, gender)
   VALUES ('$name', '$email', '$website', '$comment', '$gender')";
   
   if ($conn->query($sql) === TRUE) {

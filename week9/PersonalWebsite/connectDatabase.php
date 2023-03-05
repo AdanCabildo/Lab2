@@ -3,7 +3,7 @@
 	<body>
 	<?php
 	// database connection code
-	$con = mysqli_connect('localhost', 'root', '','dataforsale');
+	$con = mysqli_connect('192.168.150.213', 'webprogmi212', 'b3ntRhino98','webprogmi212');
 	if($con === false){
 		die("ERROR: Could not connect. "
 			. mysqli_connect_error());
@@ -17,7 +17,7 @@
 	$gender = $_REQUEST['gender'];
 
 	// database insert SQL code
-	$sql = "INSERT INTO exampleTable1 VALUES ('0', '$name', '$email', '$website', '$comment', '$gender')";
+	$sql = "INSERT INTO alcabildo_myguests VALUES ('0', '$name', '$email', '$website', '$comment', '$gender')";
 
 	if(mysqli_query($con, $sql)){
 
